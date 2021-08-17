@@ -1,0 +1,93 @@
+#main-info {
+    display: flex;
+    flex-direction: row;
+    background-color: $Dark-Violet;
+    color: $Very-Light-Gray;
+    padding: 0 11.598%;
+    justify-content: space-between;
+    position: relative;
+    min-height: 600px;
+    
+    #main-info-text-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 51%;
+        font-family: $Font-Karla;
+        h1 {
+            position: relative;
+            margin: 0;
+            font-size: 4.9vw;
+            font-weight: 400;
+            font-family: $Font-Serif-Display;
+            line-height: 4.5vw;
+            margin: 170px 0 25px 0;
+            width: 90%;
+            
+        }
+        
+        p {
+            margin: 0;
+            line-height: 1.81vw;
+            width: 95%;
+            font-size: 1.1vw;
+            margin-bottom: 30px;
+        }
+
+        #main-info-button {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1vw;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 11vw;
+            height: 3vw;
+            border: 2px solid $Very-Light-Gray;
+            color: $Very-Light-Gray;
+            margin: 0 0 127px 0;
+            box-sizing: border-box;
+            transition: 250ms cubic-bezier(0, 1, 1, 1);
+                &:hover, &:focus {
+                    text-shadow: 0px 2px 3px rgba(162, 82, 243, 1);
+                    background-color: $Very-Light-Gray;
+                    color: $Dark-Violet;
+                    box-shadow: 0px 5px 15px 3px rgba(162, 82, 243, 0.25);
+                }
+                &:active {
+                    transition: 100ms ease-in-out;
+                    border-color: rgb(143, 72, 214);
+                    background-color: rgb(143, 72, 214);
+                }          
+            }
+    }
+    #main-info-image-wrapper {
+        width: 49%;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 16%;
+            left: 11.6%;
+            width: 150px;
+            height: 1px;
+            background-color: $Very-Light-Gray;
+        }
+        img {
+            width: 100%;
+            transform: translateY(16%);
+        }
+    }
+    #bg-pattern-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #bg-pattern-left {
+        position: absolute;
+        left: 0;
+        bottom: -43%;
+    }
+}

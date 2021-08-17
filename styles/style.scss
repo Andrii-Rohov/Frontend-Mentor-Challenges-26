@@ -1,0 +1,28 @@
+$Dark-Violet: hsl(256, 26%, 20%);
+$Grayish-Blue: hsl(216, 30%, 68%);
+
+$Very-Dark-Violet: hsl(270, 9%, 17%);
+$Dark-Grayish-Violet: hsl(273, 4%, 51%);
+$Very-Light-Gray: hsl(0, 0%, 98%);
+
+$Font-Karla: 'Karla', sans-serif;
+$Font-Serif-Display: 'DM Serif Display', serif;;
+
+@import "./partials/header";
+@import "./partials/main-info";
+@import "./partials/body";
+@import "./partials/footer";
+@import "./partials/media";
+
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: $Font-Karla;
+    min-width: 300px;
+}
